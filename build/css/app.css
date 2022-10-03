@@ -441,12 +441,12 @@ thead {
 
 .derecha .dark-mode-boton {
     filter: invert(100%);
-    margin-bottom: 1rem;
+    margin-bottom: -6.5rem;
     margin-top: 1rem;
-    margin-left: 1rem;
+    margin-left: -5rem;
    
     margin-right: 1rem;
-    width: 3rem
+    width: 28px
 }
 
 .derecha .dark-mode-boton:hover {

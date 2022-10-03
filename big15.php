@@ -8,7 +8,6 @@ error_reporting(0);
 $varsession = $_SESSION["uname"];
 if($varsession == null || $varsession=''){
 echo'No tienes acceso';
-
 die();
 }
 
@@ -96,12 +95,22 @@ if ($_GET['action'] == 'logout'){
 <body>
 <header class="full-width NavBarP">
   
-		<div class="full-width NavBarP-Logo">LOGO*</div>
+		<div class="full-width NavBarP-Logo">
+<img src="assets\images\metropolitan-touring-logo-menu (1).svg" alt="">
+
+
+
+    </div>
 		<nav class="full-width NavBarP-Nav">
 			<ul class="full-width list-unstyled">
 		
-				<li>
+				<li class="derecha mobile-menu">
+
+        
+        <img class="dark-mode-boton" src="build/img/dark-mode.svg" alt="">
 					<a href="?action=logout" class=""><i class="fa fa-user" aria-hidden="true"></i> Logout</a>
+          
+        
           
 					<div class="full-width Login">
 						<p class="text-center">
@@ -137,18 +146,12 @@ if ($_GET['action'] == 'logout'){
   
 		<div class="banner-content">
 
-    <div class="mobile-menu">
 
-
-</div>
-<div class="derecha">
-  
-  <img class="dark-mode-boton" src="build/img/dark-mode.svg" alt="">
-  
-</div>
     <h1>Welcome, <?php echo $_SESSION["uname"]; ?> ! </h1>
-			<a href="#">Ver articulos</a>	
-      <button class="btn btn-sm btn-primary tour-step1 tour-step18" id="initialize-tour"> Iniciar Tour </button>
+			<!--  <a href="#">Ver articulos</a>	-->
+      <button class="btn button1"> <a href="big15ESP.php">Spanish 2022 / 2023</a> </button>
+      <button class="btn button2 tour-step1 tour-step18" id="initialize-tour"> Star Tour </button>
+      
 		</div>
 	</section>
 
@@ -174,8 +177,7 @@ if ($_GET['action'] == 'logout'){
 
 
               <!-- TAB ENGLISH -->
-              <br>
-              <br>
+             
               <table id="metro_big15" border="1">
                 <!-- INGLES -->
                 <thead>

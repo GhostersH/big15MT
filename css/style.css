@@ -66,7 +66,7 @@ html, body{
 .NavBarP-Nav > ul,
 .NavBarP-Nav > ul > li,
 .NavBarP-Nav > ul > li > a{
-	height: 90px;
+	height: 55px;
 	line-height: 50px;
 }
 .NavBarP{
@@ -89,8 +89,9 @@ html, body{
 }
 .NavBarP-Logo{
 	left: 0;
-	width: 30%;
+	width: 15%;
 	font-family: 'OswaldRegular';
+	top: -3px;
 }
 .NavBarP-Nav{
 	right: 0;
@@ -103,6 +104,7 @@ html, body{
 .NavBarP-Nav > ul > li{
 	display: inline-block;
 	position: relative;
+	bottom: -5px;
 }
 .NavBarP-Nav > ul > li > a{
 	color: #fff;
@@ -140,12 +142,12 @@ html, body{
 .banner{
 	position: relative;
 	width: 100%s;
-	height: calc(35vh - 50px);
+	height: calc(38vh - 50px);
 	background-color: #F5F5F5;
 	background-size: cover;
 	background-position: center;
 	transition: all .1s ease-out;
-	background-image: url('../assets/img/banner-1.jpg');
+	background-image: url('../assets/img/banner-1.webp');
 	animation: banner 28s infinite linear;
 }
 .banner-content{
@@ -170,10 +172,11 @@ html, body{
 .banner-content a{
 	text-decoration: none;
 	color: #FFF;
-	padding: 9px 20px;
-	border: 1px solid #FFF;
-	text-transform: uppercase;
+	padding: 6px 7px;
+	
 	transition: all .3s ease-in-out;
+	
+	padding-bottom: 8px;
 }
 .banner-content a:hover{
 	background-color: #fff;
@@ -181,34 +184,34 @@ html, body{
 }
 @keyframes banner{
 	0%{
-		background-image: url('../assets/img/banner-1.jpg');
+		background-image: url('../assets/img/banner-1.webp');
 	}
 	25%{
-		background-image: url('../assets/img/banner-1.jpg');
+		background-image: url('../assets/img/banner-1.webp');
 	}
 
 
 	26%{
-		background-image: url('../assets/img/banner-2.jpg');
+		background-image: url('../assets/img/banner-2.webp');
 	}
 	50%{
-		background-image: url('../assets/img/banner-2.jpg');
+		background-image: url('../assets/img/banner-2.webp');
 	}
 
 
 	51%{
-		background-image: url('../assets/img/banner-3.jpg');
+		background-image: url('../assets/img/banner-3.webp');
 	}
 	75%{
-		background-image: url('../assets/img/banner-3.jpg');
+		background-image: url('../assets/img/banner-3.webp');
 	}
 	
 
 	76%{
-		background-image: url('../assets/img/banner-4.jpg');
+		background-image: url('../assets/img/banner-4.webp');
 	}
 	100%{
-		background-image: url('../assets/img/banner-4.jpg');
+		background-image: url('../assets/img/banner-4.webp');
 	}
 
 }
